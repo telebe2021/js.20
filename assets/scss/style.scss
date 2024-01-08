@@ -1,0 +1,29 @@
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+.container{
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+padding: 0 32px;
+}
+ 
+
+
+@import 'reset';
+@import 'mixin';
+@import 'nav';
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import 'footer';
+@import 'favorit';
+@import 'add';
+@import 'uptade';
+@import "details";

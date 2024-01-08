@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  transition: all 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html ::-moz-selection {
+  background-color: #e61c5d;
+  color: #fff;
+}
+html ::selection {
+  background-color: #e61c5d;
+  color: #fff;
+}
+
+* input, button {
+  border: none;
+  outline: none;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 32px 0;
+}
+nav .container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav .container .nav .left {
+  width: 150px;
+}
+nav .container .nav .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav .container .nav .ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+nav .container .nav .ul li {
+  cursor: pointer;
+  position: relative;
+}
+nav .container .nav .ul li::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+nav .container .nav .ul li:hover::after {
+  width: 100%;
+}
+nav .container .nav .bi-list {
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  nav .container .nav .ul {
+    display: none;
+  }
+  nav .container .nav .bi-list {
+    display: block;
+  }
+}
+.menu {
+  position: fixed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #4484ce;
+  opacity: 0.8;
+  display: none;
+}
+
+.section1 {
+  background-image: url("../img/amsterdam-1.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0;
+}
+.section1 .container .section11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+.section1 .container .section11 .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 45%;
+  flex-direction: column;
+  text-align: center;
+}
+.section1 .container .section11 .text h1 {
+  font-size: 57px;
+}
+.section1 .container .section11 .top, .section1 .container .section11 .bottom {
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+}
+.section1 .container button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 32px;
+  font-weight: 800;
+}
+.section1 .container button:hover {
+  background-color: rgb(226, 226, 61);
+}
+
+.section2 {
+  width: 100%;
+  height: 460px;
+  border: 2px solid black;
+}
+.section2 .idea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section2 .idea div {
+  width: 25%;
+  height: 100%;
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */
